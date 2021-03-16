@@ -50,7 +50,8 @@
       
       <div class = 'help' >
         <h2> A Demonstration </h2>
-        This is a demonstration of the Django Python package django-bootstrap-crud-templates.
+        This is a demonstration of the Django Python package 
+        django-bootstrap-crud-templates.
         <br/>
         Please note that the database is reloaded every five minutes. 
 
@@ -58,12 +59,12 @@
         Each page is generated automatically, requiring only the
         definition of a few model attributes and urls.
 
-        <div class='row'>
-            <div class='span12'>
+        <div class=''>
+            <div class=''>
                 <h4>models.py</h4>
                 <pre>{% with project_root|add:"/crud/models.py" as models %}{% ssi models %} {% endwith %}</pre>
             </div>
-            <div class='span12'>
+            <div class=''>
                 <h4>urls.py</h4>
                 <pre>{% with ""|add:project_root|add:"/crud/urls.py" as urls %}{% ssi urls %} {% endwith %}</pre>
             </div>
